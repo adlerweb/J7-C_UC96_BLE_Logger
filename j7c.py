@@ -82,6 +82,7 @@ class NotifyRequester(GATTRequester):
             self.fulldata += data
 
             voltage = int.from_bytes(self.fulldata[0x07:0x0a], 'big', signed=False)
+            #@TODO: 0x21 == Curent Direction
             current = int.from_bytes(self.fulldata[0x0a:0x0d], 'big', signed=False)
             capacity = int.from_bytes(self.fulldata[0x0d:0x10], 'big', signed=False)
             power = voltage/100*current/100
