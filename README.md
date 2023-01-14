@@ -55,3 +55,11 @@ Output options for RAW:
   --raw-header          Add address header
   --raw-pretty          Use pretty-print for RAW Output
 ```
+
+## More
+
+The decoder was reverse engineered by myself. There are now a few more comprehensive protocol descriptions available, so if you want to work with these devices yourself you might want to have a look over there:
+
+* https://github.com/NiceLabs/atorch-console/blob/master/docs/protocol-design.md
+* https://github.com/syssi/esphome-atorch-dl24/blob/main/docs/protocol-design.md
+* https://github.com/msillano/UD18-protocol-and-node-red/blob/master/UD18_protocol.txt
