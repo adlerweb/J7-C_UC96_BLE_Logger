@@ -60,6 +60,13 @@ Output options for RAW:
   --raw-pretty          Use pretty-print for RAW Output
 ```
 
+## Docker
+
+The command can be run via docker or docker compose in case you have trouble installing the dependencies. Note that the container needs to run in privileged mode!
+
+  docker build . -t j7c
+  docker run -i --rm --net=host --privileged -v /dev:/dev j7c --help
+
 ## More
 
 The decoder was reverse engineered by myself. There are now a few more comprehensive protocol descriptions available, so if you want to work with these devices yourself you might want to have a look over there:
